@@ -1,0 +1,38 @@
+
+<div class="container">
+
+
+
+<h1>My Journal</h1>
+
+<nav>
+  
+  <%= link_to 'New Post', new_post_path %>
+
+</nav>
+
+
+  
+    <% @posts.each do |post| %>
+
+    <div class="status">
+
+        <td class="status"><%= post.body %></td>
+         <div class="date">  
+     <em> <%= localize(post.created_at, :format => :long) %> </em>
+    <%= puts "    "%> 
+    </div>
+          
+        <div class="buttons">
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td></div>
+      </tr>
+      </div>
+      
+        
+<br>
+    <% end %>
+
+
+</div>
