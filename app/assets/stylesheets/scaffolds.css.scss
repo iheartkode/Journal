@@ -1,21 +1,42 @@
+/* container for app gui */
+
 .container {
   display:block;
   margin: auto;
-  width: 960px;
-  padding: 10px;
+  max-width: 980px;
+  text-align: center;
+}
+
+/* CSS for new and show */
+.new {
+  text-align: center;
+}
+
+.show {
+  text-align: center;
 }
 
 
+/* H1 element css */
+h1 {
+  color: hotpink;
+  padding: 10px;
+  text-align: center;
+}
+
+/* css for show, edit, delete */
 .buttons {
   font-size: 10px;
+
 }
 
+/* Navigation CSS */
 nav {
   display: inline-block;
   position: absolute;
   top: 35px;
   width: 500px;
-  text-align: center;
+  
 }
 
 body {
@@ -36,17 +57,6 @@ pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
-}
-
-a {
-  color: #000;
-  &:visited {
-    color: #666;
-  }
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
 }
 
 div {
@@ -87,17 +97,16 @@ div {
     list-style: square;
   }
 }
-td {
-  font-family: calibri;
-  font-size: 18px;
-}
 
+/* Css for date stamp */
 .date {
-  font-size: 15px;
+  font-size: 12px;
 
 }
 
+
+/* css for status div needs refactoring */
 .status {
-  font-size:20px;
-
+  font-size: 20px;
 }
+
