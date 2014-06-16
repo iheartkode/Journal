@@ -1,15 +1,19 @@
 
 <div class="container">
-
-<%= image_tag('logo.png') %>
+<header>
+<%= image_tag('logo.png') %> 
+</header>
 
 <nav>
-  
+  <p>
+<button type="button">
   <%= link_to 'New Post', new_post_path %>
+</button>
+</p>
 
 </nav>
 
-    
+    <br>
   
     <% @posts.each do |post| %>
 

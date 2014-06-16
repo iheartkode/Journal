@@ -1,9 +1,9 @@
-/* container for app gui */
 
+/* container for app gui */
 .container {
   display:block;
   margin: auto;
-  max-width: 980px;
+  width: 100%;
   text-align: center;
 }
 
@@ -34,6 +34,7 @@ h1 {
 
 }
 
+
 /* Navigation CSS */
 nav {
   display: inline-block;
@@ -44,7 +45,8 @@ nav {
 }
 
 body {
-  background-color: #fff;
+  padding: 0;
+  background-color: #F7F5F5;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -73,32 +75,61 @@ div {
   color: green;
 }
 
+button   {
+  font-size: 20px;
+  padding:5px;
+  background-color: #FFF;
+  border: 1px solid #666;
+  text-decoration:none;
+  width: 100px;
+
+}
+
+
+button a {
+  text-decoration: none;
+  font-family: calibri;
+  color: hotpink;
+}
+
+button a:hover {
+  font-style: italic;
+}
+
+textarea {
+  width: 250px;
+  height: 100px;
+}
+
 .field_with_errors {
   padding: 2px;
-  background-color: red;
+  background-color: hotpink;
   display: table;
+  margin: auto;
+  text-align: center;
 }
 
 #error_explanation {
   width: 450px;
-  border: 2px solid red;
+  margin: auto;
+  border: 2px solid hotpink;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
   background-color: #f0f0f0;
   h2 {
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     padding: 5px 5px 5px 15px;
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0px;
-    background-color: #c00;
-    color: #fff;
+    background-color: #ccc;
+    color: #000;
   }
   ul li {
     font-size: 12px;
-    list-style: square;
+    list-style: none;
   }
 }
 
