@@ -1,0 +1,2 @@
+delete function
+   <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
